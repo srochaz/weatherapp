@@ -1,0 +1,29 @@
+.button {
+    Width:134px;
+    Height:30px;
+    Top:554px;
+    Left:121px;
+    border-radius: 19px;
+    background-color: #4580BA;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
