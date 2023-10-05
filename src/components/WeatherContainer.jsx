@@ -40,7 +40,7 @@ const Weathercontainer = ({ weather }) => {
         </article>
 
         {/* seccion inferior */}
-        <article className="grid grid-cols-3 justify-items-center bg-slate-500/50 rounded-2xl p-2 py-3 sm:grid-cols-1">
+        <article className="grid grid-cols-3 justify-items-center bg-slate-500/50 rounded-2xl p-2 py-3 sm:grid-cols-1 place-content-between">
           <WeatherStat icon="/wind.png" unit="m/s" value={weather.wind.speed} />
           <WeatherStat
             icon="/humidity.png"
@@ -54,8 +54,9 @@ const Weathercontainer = ({ weather }) => {
           />
         </article>
       </div>
-
+      <div className="object-center">
       <button className="button"  onClick={handelChangeUnit}>°C / °F</button>
+      </div>
     </section>
   );
 };
